@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectCurrency">
+
+    <Button
+        android:id="@+id/rub_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/rub"
+        android:textSize="41sp"
+        android:onClick="rubOnClick"
+        android:backgroundTint="@color/money_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_currency_txt" />
+
+    <Button
+        android:id="@+id/kzt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/kzt"
+        android:textSize="41sp"
+        android:onClick="kztOnClick"
+        android:backgroundTint="@color/money_color"
+        app:layout_constraintEnd_toEndOf="@+id/rub_btn"
+        app:layout_constraintStart_toStartOf="@+id/rub_btn"
+        app:layout_constraintTop_toBottomOf="@+id/rub_btn" />
+
+    <Button
+        android:id="@+id/usd_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usd"
+        android:layout_marginTop="50dp"
+        android:textSize="41sp"
+        android:onClick="usdOnClick"
+        android:backgroundTint="@color/money_color"
+        app:layout_constraintEnd_toEndOf="@+id/kzt_btn"
+        app:layout_constraintStart_toStartOf="@+id/kzt_btn"
+        app:layout_constraintTop_toBottomOf="@+id/kzt_btn" />
+
+    <Button
+        android:id="@+id/eur_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/eur"
+        android:textSize="41sp"
+        android:onClick="eurOnClick"
+        android:backgroundTint="@color/money_color"
+        app:layout_constraintEnd_toEndOf="@+id/usd_btn"
+        app:layout_constraintStart_toStartOf="@+id/usd_btn"
+        app:layout_constraintTop_toBottomOf="@+id/usd_btn" />
+
+    <TextView
+        android:id="@+id/select_currency_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/select_your_currency"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_can_always_change_it"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eur_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
